@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung bình cộng a, b và c</title>
+</head>
+<body>
+
+<h1>Tính trung bình cộng a, b và c</h1>
+
+<label for="numberA">Nhập số a:</label>
+<input type="number" id="numberA">
+
+<label for="numberB">Nhập số b:</label>
+<input type="number" id="numberB">
+
+<label for="numberC">Nhập số c:</label>
+<input type="number" id="numberC">
+
+<button onclick="tinhTrungBinhCong()">Tính trung bình cộng</button>
+
+<p id="result"></p>
+
+<script>
+    function tinhTrungBinhCong() {
+        // Lấy giá trị từ các ô nhập
+        var a = parseFloat(document.getElementById('numberA').value);
+        var b = parseFloat(document.getElementById('numberB').value);
+        var c = parseFloat(document.getElementById('numberC').value);
+
+        // Tính trung bình cộng
+        var trungBinhCong = (a + b + c) / 3;
+
+        // Hiển thị kết quả
+        document.getElementById('result').innerText = 'Trung bình cộng là: ' + trungBinhCong;
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
